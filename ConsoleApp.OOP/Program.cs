@@ -7,31 +7,15 @@ namespace ConsoleApp.OOP
     static void Main(string[] args)
     {
       Person person1 = new Person();
-      person1.FirstName = "Vladimir";
-      person1.LastName = "Kuzmin";
+      //person1.SetName("Vladimir");
+      person1.Name = "Vladimir";
+      //Console.WriteLine(person1.Name);
 
-      var person2 = new Person();
-      person2.FirstName = "Vasiliy";
-      person2.LastName = "Pupkin";
+      person1.SecondName = "Kuzmin";
+      //Console.WriteLine(person1.SecondName);
 
-      var doctor1 = new Doctor();
-      doctor1.FirstName = "Ai";
-      doctor1.LastName = "Bolit";
-      doctor1.Specialization = "101010";
-
-
-      Console.WriteLine(doctor1.FirstName);
-      Console.WriteLine(doctor1.Specialization);
-
-      Person p = doctor1;
-
-      Console.WriteLine(p.FirstName);
-
-      Doctor d = (Doctor)p;
-
-      Console.WriteLine(d.FirstName);
-      Console.WriteLine(d.Specialization);
-
+      Console.WriteLine(person1.FullName);
+      Console.WriteLine(person1.ShortName);
 
       Console.ReadLine();
     }
